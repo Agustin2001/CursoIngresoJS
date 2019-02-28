@@ -8,8 +8,8 @@ function mostrar()
     ancho=prompt("Ancho del rectangulo");
     largo=prompt("Largo del rectangulo");
 
-    ancho=parseInt('ancho');
-    ancho=parseInt('largo');
+    ancho=parseInt(ancho);
+    largo=parseInt(largo);
 
     perimetro=(largo + largo + ancho + ancho);
 
