@@ -1,16 +1,27 @@
 function mostrar()
 {
 
-var sexo = prompt("ingrese f ó m .");
+var sexo;
 
-document.getElementById('Sexo').value="femenino"
-document.getElementById('Sexo').value="masculino"
+sexo = prompt("Ingrese 'f' (femenino) o 'm' (masculino). ");
 
-
-while(sexo == 'f'){
-document.getElementById('Sexo').value="femenino";
+while(sexo)
+{
+    if(sexo != "f" && sexo != "m")
+    {
+        document.getElementById('Sexo').value="El sexo ingresado es incorrecto.";
+        break;
+    }
+    if(sexo == "m")
+    {
+        document.getElementById('Sexo').value="Masculino"
+        break;
+    }
+    if(sexo == "f")
+    {
+        document.getElementById('Sexo').value="Femenino"
+        break;
+    }
 }
-while(sexo == 'm'){
-    document.getElementById('Sexo').value="masculino";
-}
+
 }//FIN DE LA FUNCIÓN

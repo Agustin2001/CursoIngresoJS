@@ -1,12 +1,12 @@
 function mostrar()
 {
-	var contador = 0;
+	var contador=0;
 
-	while(contador < 10){
-
-	contador = (contador + 1);
-
-	alert("Los numeros son " + contador)}
+	while(contador < 10)
+	{
+		contador++;
+		alert("Numero " + contador);
+	}
 
 
 }//FIN DE LA FUNCIÓN

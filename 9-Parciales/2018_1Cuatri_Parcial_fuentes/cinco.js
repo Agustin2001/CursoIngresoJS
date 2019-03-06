@@ -2,28 +2,13 @@ function mostrar()
 {
     var planeta;
 
-    planeta=prompt("Planeta: ");
+    planeta = prompt("Ingrese un planeta (en letra minuscula)");
 
-    switch(planeta){
-        case "tierra":
-            alert("Aca vivimos");
-            break;
-
-        case "mercurio":
-        case "venus":
-            alert("Aca hace mas calor");
-            break;
-
-        case "marte":
-        case "jupiter":
-        case "saturno":
-        case "urano":
-        case "neptuno":
-            alert("Aca hace mas frio");
-            break;
-
-        default:
-            alert("El planeta no es valido");
-            break;
+    switch(planeta)
+    {
+        case 1: 
+        "venus";
+        "mercurio";
+        alert("Aca hace mas calor");
     }
 }

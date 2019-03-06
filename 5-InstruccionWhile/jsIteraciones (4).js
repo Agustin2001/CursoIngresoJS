@@ -1,12 +1,20 @@
 function mostrar()
 {
 
-	var numero = prompt("ingrese un número entre 0 y 9.");
+	var numero = prompt("ingrese un número entre 0 y 10.");
 
-	document.getElementById("Numero").value=numero;
-
-	while(numero > 0 && numero < 10){
-		alert("El numero es " + numero);
+	while(numero)
+	{
+		if(numero >= 0 && numero <= 9)
+		{
+			document.getElementById("Numero").value = numero;
+			break;
+		}
+		if(numero < 0 || numero > 9)
+		{
+			document.getElementById("Numero").value = "El numero ingresado no es valido.";
+			break;
+		}
 	}
 
 }//FIN DE LA FUNCIÓN

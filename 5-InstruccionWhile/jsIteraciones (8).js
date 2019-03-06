@@ -1,14 +1,32 @@
 function mostrar()
 {
+	var contador=1;
+	var numero;
+	var positivos=0;
+	var negativos=1;
 
-	var contador=0;
-	var positivo=0;
-	var negativo=1;
-	
-	var respuesta='si';
+	while(contador)
+	{
+		contador++;
+		numero=prompt("Ingrese un numero.");
 
+	if(numero < 0)
+	{
+		negativos = negativos * parseInt(numero);
+	}
+	if(numero > 0)
+	{
+		positivos = positivos + parseInt(numero);
+	}
 
-document.getElementById('suma').value=positivo;
-document.getElementById('producto').value=negativo;
+	if(numero == undefined)
+	{
+		alert("La operacion ha sido cancelada.");
+		break;
+	}
+	}
+
+	document.getElementById("suma").value=positivos;
+	document.getElementById("producto").value=negativos;
 
 }//FIN DE LA FUNCIÓN
